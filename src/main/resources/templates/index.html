@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<h1>Colorful Images</h1>
+
+<!-- Display Unsplash images from the model -->
+<div class="card-container">
+    <div class="card" th:each="image : ${images}">
+        <div class="image-box">
+            <img th:src="${image.urls.regular}" alt="Image">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

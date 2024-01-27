@@ -1,0 +1,48 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F1EFEF;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFA500;
+    margin: 0;
+    color: #fff;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    height: 100px; /* Adjust the height as needed */
+    width: 100px; /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #6495ED; /* Cornflower Blue */
+}
+
+.image-box {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%; /* Make the image responsive to its container */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
